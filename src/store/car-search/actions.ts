@@ -16,5 +16,9 @@ export const actions: ActionTree<CarSearchState, {}> = {
       .catch(() => {
         commit("carSearch/dataRequestFailed");
       });
+  },
+
+  clearData({ commit }) {
+    commit("actions/dataCleared");
   }
 };

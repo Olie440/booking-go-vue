@@ -15,5 +15,10 @@ export const mutations: MutationTree<CarSearchState> = {
   dataRequestFailed(state) {
     state.loading = "Error";
     state.data = null;
+  },
+
+  dataCleared(state) {
+    state.loading = "None";
+    state.data = null;
   }
 };
