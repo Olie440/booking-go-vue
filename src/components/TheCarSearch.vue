@@ -3,20 +3,20 @@
     <div class="car-search__search-container background--yellow">
       <h2 class="car-search__header">Let’s find your ideal car</h2>
       <label class="car-search__label" for="car-search__search">
-        Pick-up Location</label
-      >
-      <SearchResults />
+        Pick-up Location
+      </label>
+      <TheCarSearchResults />
     </div>
   </div>
 </template>
 
 <script lang="ts">
 import { Component, Vue } from "vue-property-decorator";
-import SearchResults from "./SearchResults.vue";
+import TheCarSearchResults from "./TheCarSearchResults.vue";
 
 @Component({
   components: {
-    SearchResults
+    TheCarSearchResults
   }
 })
 export default class CarSearch extends Vue {}

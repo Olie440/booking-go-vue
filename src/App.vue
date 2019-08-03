@@ -1,18 +1,18 @@
 <template>
   <div id="app">
-    <CarSearch />
+    <TheCarSearch />
   </div>
 </template>
 
 <script lang="ts">
 import { Component, Vue } from "vue-property-decorator";
-import CarSearch from "./components/CarSearch.vue";
+import TheCarSearch from "./components/TheCarSearch.vue";
 import "./assets/styles/global.css";
 import "./assets/styles/reset.css";
 
 @Component({
   components: {
-    CarSearch
+    TheCarSearch
   }
 })
 export default class App extends Vue {}

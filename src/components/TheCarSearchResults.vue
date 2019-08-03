@@ -13,7 +13,7 @@
 import { Component, Vue } from "vue-property-decorator";
 
 @Component
-export default class SearchResults extends Vue {}
+export default class TheCarSearchResults extends Vue {}
 </script>
 
 <style scoped>
