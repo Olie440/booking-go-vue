@@ -15,7 +15,7 @@ export const getters: GetterTree<CarSearchState, {}> = {
     return state.loading === "Error";
   },
 
-  data(state): CarSearchData | null {
-    return state.data;
+  results(state): CarSearchData | [] {
+    return state.data || [];
   }
 };
